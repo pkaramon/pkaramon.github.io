@@ -616,6 +616,17 @@ body {
 
     }
 
+    .contact-section {
+        width: 95%;
+    }
+
+    .contact-section .image-container {
+        display: none;
+    }
+
+    .contact-form-wrapper {
+        border-radius: 1rem
+    }
 
 }
 
@@ -632,6 +643,10 @@ body {
     .tutorial-section {
         width: auto;
         max-width: 95%;
+    }
+
+    .contact-section {
+        width: 95%;
     }
 }
 
