@@ -266,7 +266,7 @@ body {
     box-shadow: var(--box-shadow);
 }
 
-.main-article h1 {
+.main-heading {
     font-size: 2.5rem;
 }
 
@@ -473,7 +473,6 @@ body {
     flex: 1;
     height: auto;
     background-image: url(images/contact.jpg);
-
     /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
@@ -488,6 +487,88 @@ body {
     height: auto;
 }
 
+
+
+.tutorial-section-container {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-image: url(images/florian-klauer-mk7D-4UCfmg-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tutorial-section {
+    background-color: rgb(240, 238, 231, 0.95);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    width: 65%;
+    box-shadow: var(--box-shadow);
+}
+
+
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    row-gap: 2rem;
+    margin-top: 2rem;
+}
+
+
+.tutorial-card {
+    display: flex;
+    border: 2px solid var(--cbg-alt);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    height: 100%;
+}
+
+.tutorial-card-image {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 1rem;
+    align-self: center;
+}
+
+.tutorial-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tutorial-download {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--cbg-alt);
+    background-color: var(--cbg);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    box-shadow: inset 0 0 0 0 var(--cbg);
+    color: var(--cbg-alt);
+    text-decoration: none;
+    text-align: center;
+    width: 7rem;
+    margin-top: 1rem;
+
+}
+
+.tutorial-download:hover {
+    color: #fff;
+    text-shadow: none;
+
+    box-shadow: inset 200px 0 0 0 var(--cbg-alt);
+    color: var(--cbg);
+    background-color: var(--cbg-alt);
+    cursor: pointer;
+
+}
 
 /* Styles for small screens (up to 767px) */
 
@@ -511,6 +592,31 @@ body {
         margin: 1rem 3rem;
     }
 
+    .tutorial-section {
+        width: 100%;
+        max-width: 95%;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tutorial-section-container {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .tutorial-card-image {
+        height: 2rem;
+        width: 2rem;
+
+    }
+
+
 }
 
 /* Styles for medium screens (768px to 1023px) */
@@ -521,6 +627,11 @@ body {
 
     .secondary-article {
         min-width: 75%;
+    }
+
+    .tutorial-section {
+        width: auto;
+        max-width: 95%;
     }
 }
 
