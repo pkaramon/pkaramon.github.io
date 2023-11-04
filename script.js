@@ -7,6 +7,7 @@ function openPopup(title, message) {
 function closePopup() {
     document.getElementById('popup').style.display = 'none';
 }
+document.getElementById('close-button').addEventListener('click', closePopup)
 
 const contactForm = document.getElementById('contact-form');
 const inputFields = new Map([

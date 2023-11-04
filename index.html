@@ -13,32 +13,59 @@
 <body>
     <nav class="navbar">
         <header class="page-title-header">
-            <h1>The greatest title</h1>
+            <h1>Piotr Karamon</h1>
         </header>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="navbar-list">
-            <li><a href="asdfas">Ogólne info</a></li>
+            <li><a href="asdfas">Strona główna</a></li>
             <li><a href="asdfas">Kontakt</a></li>
             <li><a href="asdfas">Tutoriale</a></li>
         </ul>
     </nav>
 
-    <main>
-        <article class="main-article">
-            <h1>Lorem, ipsum dolor.</h1>
-            <hr class="card-hr">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi cum quae laborum, quis illo earum
-                ipsa
-                officia in nemo quam quibusdam suscipit voluptatibus minima alias quos unde voluptatem, adipisci sunt!
-            </p>
-        </article>
 
-    </main>
+    <section class="contact-section">
+        <section class="contact-form-wrapper">
+            <h2>Skontaktuj się ze mną</h2>
+            <hr class="card-hr">
+            <p>Cieszę się, że znalazłeś/aś czas, aby odwiedzić moją stronę. Zapraszam do zapoznania się z moimi
+                notakami/tutorialami.</p>
+            <p>Jeśli masz pytania, chciałbyś dowiedzieć się więcej o mojej pracy
+                nie krępuj się - jestem tu, aby Ci pomóc!</p>
+            <p>Chętnie odpowiem na wszystkie Twoje pytania. Twoja opinia i
+                feedback są dla mnie bardzo ważne.</p>
+
+            <form id="contact-form" class="contact-form" method="post" novalidate>
+                <div class="form-group">
+                    <i class="fa fa-user icon" aria-hidden="true"> </i>
+                    <input type="text" id="username" name="username" placeholder="Twoje imię...">
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-envelope icon" aria-hidden="true"></i>
+                    <input type="email" id="email" placeholder="Adres email...">
+                </div>
+
+                <div class="form-element">
+                    <textarea id="message" name="message" placeholder="Twoja wiadomość..."></textarea>
+                </div>
+
+                <div class="form-element">
+                    <input class="form-submit-button" type="submit" value="Wyślij">
+                </div>
+            </form>
+        </section>
+        <div class="image-container">
+            <!-- <img class="contact-image" src="./images/pawel-czerwinski-contact.jpg" alt="Obrazek telefonu."> -->
+        </div>
+    </section>
+
+
 
     <div id="popup" class="popup">
         <div class="popup-content">
-            <span class="close-button" onclick="closePopup()">&times;</span>
+            <span id="close-button">&times;</span>
             <h2 id="popup-title">Popup Title</h2>
             <hr class="card-hr">
             <div id="popup-message"></div>
@@ -46,66 +73,63 @@
     </div>
 
 
-    <section class="contact-form-wrapper" style="display: none;">
-        <h2>Skontaktuj się ze mną</h2>
-        <hr class="card-hr">
-        <form id="contact-form" class="contact-form" method="post" novalidate>
-            <div class="form-group">
-                <i class="fa fa-user icon" aria-hidden="true"> </i>
-                <input class="field-invalid" type="text" id="username" name="username" placeholder="Twoje imię...">
-            </div>
+    <div style="display:none;">
+        <main class="jumbotron">
+            <article class="main-article">
+                <h1>Lorem, ipsum dolor.</h1>
+                <hr class="card-hr">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi cum quae laborum, quis illo earum
+                    ipsa
+                    officia in nemo quam quibusdam suscipit voluptatibus minima alias quos unde voluptatem, adipisci
+                    sunt!
+                </p>
+            </article>
 
-            <div class="form-group">
-                <i class="fa fa-envelope icon" aria-hidden="true"></i>
-                <input type="email" id="email" placeholder="Adres email...">
-            </div>
+        </main>
 
-            <div class="form-element">
-                <textarea id="message" name="message" placeholder="Twoja wiadomość..."></textarea>
-            </div>
 
-            <div class="form-element">
-                <input class="form-submit-button" type="submit" value="Wyślij">
-            </div>
-        </form>
 
-    </section>
+        <section class="articles-section">
+            <article class="secondary-article">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad
+                    asperiores eius modi culpa! Aliquam
+                    laboriosam asperiores eos odio doloremque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eligendi animi sequi distinctio
+                    recusandae
+                    id doloremque maxime eveniet, unde quis, error voluptatibus voluptatum provident iusto voluptate cum
+                    adipisci, quo consectetur? Enim quaerat excepturi accusamus ducimus earum nam eligendi, impedit
+                    molestiae, natus voluptatum dolore, sapiente vero asperiores numquam voluptas ipsam inventore.
+                </p>
+            </article>
 
-    <section class="articles-section">
-        <article class="secondary-article">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad
-                asperiores eius modi culpa! Aliquam
-                laboriosam asperiores eos odio doloremque.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eligendi animi sequi distinctio recusandae
-                id doloremque maxime eveniet, unde quis, error voluptatibus voluptatum provident iusto voluptate cum
-                adipisci, quo consectetur? Enim quaerat excepturi accusamus ducimus earum nam eligendi, impedit
-                molestiae, natus voluptatum dolore, sapiente vero asperiores numquam voluptas ipsam inventore.
-            </p>
-        </article>
+            <article class="secondary-article">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad
+                    asperiores eius modi culpa! Aliquam
+                    laboriosam asperiores eos odio doloremque.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt non dolorum, natus, maxime sint,
+                    odit
+                    perferendis quam aliquid sapiente iure totam at! Quae ratione laboriosam repellendus tempora aperiam
+                    suscipit labore ab culpa velit asperiores cumque aliquam, doloribus quisquam vero at ducimus
+                    voluptate
+                    vitae ut ad rerum commodi voluptatum pariatur quia.
+                </p>
+            </article>
 
-        <article class="secondary-article">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad
-                asperiores eius modi culpa! Aliquam
-                laboriosam asperiores eos odio doloremque.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt non dolorum, natus, maxime sint, odit
-                perferendis quam aliquid sapiente iure totam at! Quae ratione laboriosam repellendus tempora aperiam
-                suscipit labore ab culpa velit asperiores cumque aliquam, doloribus quisquam vero at ducimus voluptate
-                vitae ut ad rerum commodi voluptatum pariatur quia.
-            </p>
-        </article>
+            <article class="secondary-article">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad
+                    asperiores eius modi culpa! Aliquam
+                    laboriosam asperiores eos odio doloremque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, illum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, ipsum?
+                </p>
+            </article>
+        </section>
 
-        <article class="secondary-article">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad
-                asperiores eius modi culpa! Aliquam
-                laboriosam asperiores eos odio doloremque.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, illum.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, ipsum?
-            </p>
-        </article>
-    </section>
+    </div>
+
 
 
 
