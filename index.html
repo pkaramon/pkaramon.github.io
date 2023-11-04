@@ -46,7 +46,6 @@
                     Ta strona umożliwa również łatwy kontakt ze mną.
                 </p>
             </article>
-
         </main>
 
         <section class="articles-section">
@@ -86,6 +85,7 @@
         </section>
 
     </div>
+
     <div id="tutorial-page" class="page">
         <section class="tutorial-section-container">
             <section class="tutorial-section">
@@ -232,6 +232,8 @@
             const navbarMenu = document.getElementById("menu-btn");
             navbarMenu.checked = false
 
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
         }
 
         const homePageButtons = document.getElementsByClassName("home-page-btn");

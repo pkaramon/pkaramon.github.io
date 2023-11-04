@@ -24,18 +24,15 @@
 body {
     font-size: 16px;
     font-family: 'Poppins';
+    padding-top: 4rem;
 }
 
 .page {
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
+    display: none;
 }
 
 .page-shown {
-    height: auto;
-    opacity: 1;
+    display: block;
 }
 
 .popup {
@@ -104,6 +101,7 @@ body {
     z-index: 1;
     top: 0;
     width: 100%;
+    height: 4rem;
     background-color: white;
     box-shadow: var(--box-shadow);
 }
@@ -494,7 +492,6 @@ body {
 
 .tutorial-section-container {
     display: flex;
-    margin-top: 5rem;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -638,6 +635,10 @@ body {
     .secondary-article {
         min-width: 95%;
         margin: 1rem 3rem;
+    }
+
+    .jumbotron {
+        background-attachment: inherit;
     }
 }
 
