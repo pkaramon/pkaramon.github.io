@@ -4,13 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bla bla bla</title>
+    <title>Piotr Karamon</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
+    <section id="popup" class="popup">
+        <div class="popup-content">
+            <span id="close-button">&times;</span>
+            <h2 id="popup-title">Popup Title</h2>
+            <hr class="card-hr">
+            <div id="popup-message"></div>
+        </div>
+    </section>
+
     <nav class="navbar">
         <header class="page-title-header">
             <h1>Piotr Karamon</h1>
@@ -18,13 +27,66 @@
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="navbar-list">
-            <li><a href="asdfas">Strona główna</a></li>
-            <li><a href="asdfas">Kontakt</a></li>
-            <li><a href="asdfas">Tutoriale</a></li>
+            <li><a class="home-page-btn" href="">Strona główna</a></li>
+            <li><a class="contact-page-btn" href="">Kontakt</a></li>
+            <li><a class="tutorial-page-btn" href="">Tutoriale</a></li>
         </ul>
     </nav>
 
-    <div style="display:none">
+    <div id="home-page" class="page page-shown">
+        <main class="jumbotron">
+            <article class="main-article">
+                <h1 class="main-heading">Witaj na mojej stronie.</h1>
+                <hr class="card-hr">
+                <p>Jestem studentem informatyki na Akademii Górniczo-Hutniczej (AGH) i pasjonatem Data
+                    Science i Machine Learning, matematyki oraz ogólnie programowania.
+                    Tutaj dzielę się swoimi
+                    notatkami/tutorialami które tworzyłem ucząc się oraz
+                    projektami z tych fascynujących dziedzin.
+                    Ta strona umożliwa również łatwy kontakt ze mną.
+                </p>
+            </article>
+
+        </main>
+
+        <section class="articles-section">
+            <article class="secondary-article">
+                <h2><i class="header-icon fa fa-university" aria-hidden="true"></i> Moje studia.</h2>
+                <p>Jestem studentem drugiego roku informatyki na AGH, gdzie kształcę się w fascynującej dziedzinie
+                    informatyki. Studia na AGH to połączenie teorii i praktyki, które pozwalają mi zgłębiać złożone
+                    zagadnienia z zakresu algorytmów, programowania, sieci komputerowych i wielu innych obszarów. To
+                    okazja do rozwoju umiejętności programowania, projektowania oprogramowania i pracy z najnowszymi
+                    technologiami </p>
+
+            </article>
+
+            <article class="secondary-article">
+                <h2><i class="header-icon fa fa-wrench" aria-hidden="true"></i> Moje ulubione narzędzia.</h2>
+                <p>
+                <ul>
+                    <li>VS Code - mój główny edytor do tworzenia stron internetowych</li>
+                    <li>Doom emacs - idealne narzędzie do tworzenia notatek/tutoriali.</li>
+                    <li>Pycharm/IDEA/Datagrip - są to najlepsze narzędzia w swoich dziedzinach. Bardzo przyśpieszające
+                        pracę.</li>
+                    <li>Git Bash - pracuję na systemie Windows zatem ta konsola to absolutny must-have.</li>
+                    <li>Github - każdy mój projekt lub notatki są na nim przechowywane.</li>
+
+                </ul>
+                </p>
+            </article>
+
+            <article class="secondary-article">
+                <h2> <i class="header-icon fa fa-user-circle" aria-hidden="true"></i>
+                    Pozostałe hobby.</h2>
+                <p>Motoryzacja i muzyka to moje dwie wielkie pasje. Motoryzacja pozwala mi zanurzyć się w fascynujący
+                    świat samochodów, podziwiać ich design i technologię, a także cieszyć się niezapomnianymi podróżami.
+                    Muzyka natomiast towarzyszy mi w każdym aspekcie życia, tworząc niesamowity nastrój i inspirując do
+                    różnych działań. </p>
+            </article>
+        </section>
+
+    </div>
+    <div id="tutorial-page" class="page">
         <section class="tutorial-section-container">
             <section class="tutorial-section">
                 <h1 class="main-heading">Tutoriale / Notatki</h1>
@@ -78,8 +140,7 @@
         </section>
     </div>
 
-
-    <div style="display: block;">
+    <div id="contact-page" class="page">
         <section class="contact-section">
             <section class="contact-form-wrapper">
                 <h2>Skontaktuj się ze mną</h2>
@@ -117,72 +178,6 @@
 
 
 
-    <section id="popup" class="popup">
-        <div class="popup-content">
-            <span id="close-button">&times;</span>
-            <h2 id="popup-title">Popup Title</h2>
-            <hr class="card-hr">
-            <div id="popup-message"></div>
-        </div>
-    </section>
-
-
-    <div style="display:none;">
-        <main class="jumbotron">
-            <article class="main-article">
-                <h1 class="main-heading">Witaj na mojej stronie.</h1>
-                <hr class="card-hr">
-                <p>Jestem studentem informatyki na Akademii Górniczo-Hutniczej (AGH) i pasjonatem Data
-                    Science i Machine Learning, matematyki oraz ogólnie programowania.
-                    Tutaj dzielę się swoimi
-                    notatkami/tutorialami które tworzyłem ucząc się oraz
-                    projektami z tych fascynujących dziedzin.
-                    Ta strona umożliwa również łatwy kontakt ze mną.
-                </p>
-            </article>
-
-        </main>
-
-
-
-        <section class="articles-section">
-            <article class="secondary-article">
-                <h2><i class="header-icon fa fa-university" aria-hidden="true"></i> Moje studia.</h2>
-                <p>Jestem studentem drugiego roku informatyki na AGH, gdzie kształcę się w fascynującej dziedzinie
-                    informatyki. Studia na AGH to połączenie teorii i praktyki, które pozwalają mi zgłębiać złożone
-                    zagadnienia z zakresu algorytmów, programowania, sieci komputerowych i wielu innych obszarów. To
-                    okazja do rozwoju umiejętności programowania, projektowania oprogramowania i pracy z najnowszymi
-                    technologiami </p>
-
-            </article>
-
-            <article class="secondary-article">
-                <h2><i class="header-icon fa fa-wrench" aria-hidden="true"></i> Moje ulubione narzędzia.</h2>
-                <p>
-                <ul>
-                    <li>VS Code - mój główny edytor do tworzenia stron internetowych</li>
-                    <li>Doom emacs - idealne narzędzie do tworzenia notatek/tutoriali.</li>
-                    <li>Pycharm/IDEA/Datagrip - są to najlepsze narzędzia w swoich dziedzinach. Bardzo przyśpieszające
-                        pracę.</li>
-                    <li>Git Bash - pracuję na systemie Windows zatem ta konsola to absolutny must-have.</li>
-                    <li>Github - każdy mój projekt lub notatki są na nim przechowywane.</li>
-
-                </ul>
-                </p>
-            </article>
-
-            <article class="secondary-article">
-                <h2> <i class="header-icon fa fa-user-circle" aria-hidden="true"></i>
-                    Pozostałe hobby.</h2>
-                <p>Motoryzacja i muzyka to moje dwie wielkie pasje. Motoryzacja pozwala mi zanurzyć się w fascynujący
-                    świat samochodów, podziwiać ich design i technologię, a także cieszyć się niezapomnianymi podróżami.
-                    Muzyka natomiast towarzyszy mi w każdym aspekcie życia, tworząc niesamowity nastrój i inspirując do
-                    różnych działań. </p>
-            </article>
-        </section>
-
-    </div>
-
 
 
 
@@ -199,15 +194,67 @@
 
         <nav>
             <ul class="footer-navbar">
-                <li><a href="asdfas">Strona główna</a></li>
-                <li><a href="asdfas">Kontakt</a></li>
-                <li><a href="asdfas">Tutoriale</a></li>
+                <li><a class="home-page-btn" href="">Strona główna</a></li>
+                <li><a class="contact-page-btn" href="">Kontakt</a></li>
+                <li><a class="tutorial-page-btn" href="">Tutoriale</a></li>
             </ul>
         </nav>
         <div class="copyright-info">&copy; 2023 Wszelkie prawa zastrzeżone.</div>
     </footer>
 
     <script src="./script.js"></script>
+    <script>
+        // const homePage = document.getElementById("home-page");
+        // const contactPage = document.getElementById("contact-page");
+        // const tutorialPage = document.getElementById("tutorial-page");
+
+
+        function setupClickHandlers(pageButtons, pageId) {
+            for (const button of pageButtons) {
+                button.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    menu(pageId);
+                })
+            }
+        }
+
+
+        function menu(pageId) {
+            const pages = document.getElementsByClassName("page");
+            for (const page of pages) {
+                page.classList.remove('page-shown')
+            }
+
+            const newPage = document.getElementById(pageId);
+            newPage.classList.add('page-shown');
+            console.log(newPage)
+
+            const navbarMenu = document.getElementById("menu-btn");
+            navbarMenu.checked = false
+
+        }
+
+        const homePageButtons = document.getElementsByClassName("home-page-btn");
+        const contactPageButtons = document.getElementsByClassName("contact-page-btn");
+        const tutorialPageButtons = document.getElementsByClassName("tutorial-page-btn");
+
+        setupClickHandlers(homePageButtons, "home-page");
+        setupClickHandlers(contactPageButtons, "contact-page");
+        setupClickHandlers(tutorialPageButtons, "tutorial-page");
+
+        console.log(
+            // homePage,
+            // contactPage,
+            // tutorialPage,
+            homePageButtons,
+            contactPageButtons,
+            tutorialPageButtons
+        )
+
+
+
+
+    </script>
 
 </body>
 
