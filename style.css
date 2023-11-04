@@ -288,6 +288,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    max-width: 55%;
+    margin: 0 auto;
 }
 
 .secondary-article {
@@ -302,12 +304,21 @@ body {
 
     border-radius: 1rem;
 
-    max-width: 50%;
 }
 
 .secondary-article h2 {
     margin-bottom: 1rem;
 }
+
+.secondary-article li {
+    margin-left: 1rem;
+
+}
+
+.header-icon {
+    margin-right: 1rem;
+}
+
 
 .page-footer {
     padding: 6rem 1rem;

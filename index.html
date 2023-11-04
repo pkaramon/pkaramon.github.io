@@ -25,41 +25,43 @@
     </nav>
 
 
-    <section class="contact-section">
-        <section class="contact-form-wrapper">
-            <h2>Skontaktuj się ze mną</h2>
-            <hr class="card-hr">
-            <p>Cieszę się, że znalazłeś/aś czas, aby odwiedzić moją stronę. Zapraszam do zapoznania się z moimi
-                notakami/tutorialami.</p>
-            <p>Jeśli masz pytania, chciałbyś dowiedzieć się więcej o mojej pracy
-                nie krępuj się - jestem tu, aby Ci pomóc!</p>
-            <p>Chętnie odpowiem na wszystkie Twoje pytania. Twoja opinia i
-                feedback są dla mnie bardzo ważne.</p>
+    <div style="display: none;">
+        <section class="contact-section">
+            <section class="contact-form-wrapper">
+                <h2>Skontaktuj się ze mną</h2>
+                <hr class="card-hr">
+                <p>Cieszę się, że znalazłeś/aś czas, aby odwiedzić moją stronę. Zapraszam do zapoznania się z moimi
+                    notakami/tutorialami.</p>
+                <p>Jeśli masz pytania, chciałbyś dowiedzieć się więcej o mojej pracy
+                    nie krępuj się - jestem tu, aby Ci pomóc!</p>
+                <p>Chętnie odpowiem na wszystkie Twoje pytania. Twoja opinia i
+                    feedback są dla mnie bardzo ważne.</p>
 
-            <form id="contact-form" class="contact-form" method="post" novalidate>
-                <div class="form-group">
-                    <i class="fa fa-user icon" aria-hidden="true"> </i>
-                    <input type="text" id="username" name="username" placeholder="Twoje imię...">
-                </div>
+                <form id="contact-form" class="contact-form" method="post" novalidate>
+                    <div class="form-group">
+                        <i class="fa fa-user icon" aria-hidden="true"> </i>
+                        <input type="text" id="username" name="username" placeholder="Twoje imię...">
+                    </div>
 
-                <div class="form-group">
-                    <i class="fa fa-envelope icon" aria-hidden="true"></i>
-                    <input type="email" id="email" placeholder="Adres email...">
-                </div>
+                    <div class="form-group">
+                        <i class="fa fa-envelope icon" aria-hidden="true"></i>
+                        <input type="email" id="email" placeholder="Adres email...">
+                    </div>
 
-                <div class="form-element">
-                    <textarea id="message" name="message" placeholder="Twoja wiadomość..."></textarea>
-                </div>
+                    <div class="form-element">
+                        <textarea id="message" name="message" placeholder="Twoja wiadomość..."></textarea>
+                    </div>
 
-                <div class="form-element">
-                    <input class="form-submit-button" type="submit" value="Wyślij">
-                </div>
-            </form>
+                    <div class="form-element">
+                        <input class="form-submit-button" type="submit" value="Wyślij">
+                    </div>
+                </form>
+            </section>
+            <div class="image-container">
+                <!-- <img class="contact-image" src="./images/pawel-czerwinski-contact.jpg" alt="Obrazek telefonu."> -->
+            </div>
         </section>
-        <div class="image-container">
-            <!-- <img class="contact-image" src="./images/pawel-czerwinski-contact.jpg" alt="Obrazek telefonu."> -->
-        </div>
-    </section>
+    </div>
 
 
 
@@ -73,15 +75,17 @@
     </div>
 
 
-    <div style="display:none;">
+    <div style="display:block;">
         <main class="jumbotron">
             <article class="main-article">
-                <h1>Lorem, ipsum dolor.</h1>
+                <h1>Witaj na mojej stronie.</h1>
                 <hr class="card-hr">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi cum quae laborum, quis illo earum
-                    ipsa
-                    officia in nemo quam quibusdam suscipit voluptatibus minima alias quos unde voluptatem, adipisci
-                    sunt!
+                <p>Jestem studentem informatyki na Akademii Górniczo-Hutniczej (AGH) i pasjonatem Data
+                    Science i Machine Learning, matematyki oraz ogólnie programowania.
+                    Tutaj dzielę się swoimi
+                    notatkami/tutorialami które tworzyłem ucząc się oraz
+                    projektami z tych fascynujących dziedzin.
+                    Ta strona umożliwa również łatwy kontakt ze mną.
                 </p>
             </article>
 
@@ -91,40 +95,37 @@
 
         <section class="articles-section">
             <article class="secondary-article">
-                <h2>Lorem, ipsum dolor.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad
-                    asperiores eius modi culpa! Aliquam
-                    laboriosam asperiores eos odio doloremque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eligendi animi sequi distinctio
-                    recusandae
-                    id doloremque maxime eveniet, unde quis, error voluptatibus voluptatum provident iusto voluptate cum
-                    adipisci, quo consectetur? Enim quaerat excepturi accusamus ducimus earum nam eligendi, impedit
-                    molestiae, natus voluptatum dolore, sapiente vero asperiores numquam voluptas ipsam inventore.
+                <h2><i class="header-icon fa fa-university" aria-hidden="true"></i> Moje studia.</h2>
+                <p>Jestem studentem drugiego roku informatyki na AGH, gdzie kształcę się w fascynującej dziedzinie
+                    informatyki. Studia na AGH to połączenie teorii i praktyki, które pozwalają mi zgłębiać złożone
+                    zagadnienia z zakresu algorytmów, programowania, sieci komputerowych i wielu innych obszarów. To
+                    okazja do rozwoju umiejętności programowania, projektowania oprogramowania i pracy z najnowszymi
+                    technologiami </p>
+
+            </article>
+
+            <article class="secondary-article">
+                <h2><i class="header-icon fa fa-wrench" aria-hidden="true"></i> Moje ulubione narzędzia.</h2>
+                <p>
+                <ul>
+                    <li>VS Code - mój główny edytor do tworzenia stron internetowych</li>
+                    <li>Doom emacs - idealne narzędzie do tworzenia notatek/tutoriali.</li>
+                    <li>Pycharm/IDEA/Datagrip - są to najlepsze narzędzia w swoich dziedzinach. Bardzo przyśpieszające
+                        pracę.</li>
+                    <li>Git Bash - pracuję na systemie Windows zatem ta konsola to absolutny must-have.</li>
+                    <li>Github - każdy mój projekt lub notatki są na nim przechowywane.</li>
+
+                </ul>
                 </p>
             </article>
 
             <article class="secondary-article">
-                <h2>Lorem, ipsum dolor.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad
-                    asperiores eius modi culpa! Aliquam
-                    laboriosam asperiores eos odio doloremque.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt non dolorum, natus, maxime sint,
-                    odit
-                    perferendis quam aliquid sapiente iure totam at! Quae ratione laboriosam repellendus tempora aperiam
-                    suscipit labore ab culpa velit asperiores cumque aliquam, doloribus quisquam vero at ducimus
-                    voluptate
-                    vitae ut ad rerum commodi voluptatum pariatur quia.
-                </p>
-            </article>
-
-            <article class="secondary-article">
-                <h2>Lorem, ipsum dolor.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad
-                    asperiores eius modi culpa! Aliquam
-                    laboriosam asperiores eos odio doloremque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, illum.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, ipsum?
-                </p>
+                <h2> <i class="header-icon fa fa-user-circle" aria-hidden="true"></i>
+                    Pozostałe hobby.</h2>
+                <p>Motoryzacja i muzyka to moje dwie wielkie pasje. Motoryzacja pozwala mi zanurzyć się w fascynujący
+                    świat samochodów, podziwiać ich design i technologię, a także cieszyć się niezapomnianymi podróżami.
+                    Muzyka natomiast towarzyszy mi w każdym aspekcie życia, tworząc niesamowity nastrój i inspirując do
+                    różnych działań. </p>
             </article>
         </section>
 
