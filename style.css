@@ -320,7 +320,6 @@ body {
     justify-content: center;
     background-color: var(--cbg-alt);
     color: var(--cbg-lighter);
-
 }
 
 .footer-social-media {
@@ -357,6 +356,7 @@ body {
 }
 
 .footer-navbar a {
+    display: block;
     color: var(--cbg-lighter);
     text-decoration: none;
     text-align: center;
@@ -638,6 +638,12 @@ body {
 
     .footer-navbar li {
         margin-bottom: 0.5rem;
+        margin-left: 0;
+        /* background-color: red; */
+    }
+
+    .footer-navbar li a {
+        text-align: center;
     }
 }
 
