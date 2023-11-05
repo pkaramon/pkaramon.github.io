@@ -634,11 +634,14 @@ body {
 
     .footer-navbar {
         flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .footer-navbar li {
         margin-bottom: 0.5rem;
         margin-left: 0;
+        width: 100%;
         /* background-color: red; */
     }
 
