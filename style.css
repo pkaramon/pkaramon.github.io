@@ -135,7 +135,7 @@ body {
     display: block;
     height: 2px;
     position: relative;
-    transition: background .2s ease-out;
+    transition: all .2s ease-out;
     width: 1rem;
 }
 
@@ -198,6 +198,10 @@ body {
 
     .navbar .menu-btn:checked~.navbar-list {
         right: 0;
+    }
+
+    .navbar .menu-btn:checked~.navbar-list a:hover {
+        box-shadow: inset 1023px 0 0 0 var(--cbg-alt);
     }
 
 
@@ -581,6 +585,7 @@ body {
     .tutorial-section {
         width: 100%;
         max-width: 95%;
+        background-color: var(--cbg);
     }
 
     .main-heading {
