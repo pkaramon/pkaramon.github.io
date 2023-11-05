@@ -9,10 +9,7 @@
 }
 
 :root {
-    /* CSS HEX */
-    --caccent: #edafb8ff;
-    --champagne-pink: #f7e1d7ff;
-    --cacccent-alt: #b0c4b1ff;
+    --cinvalid: #edafb8ff;
     --cfg: rgb(39, 43, 44);
     --cbg: rgb(240, 238, 231);
     --cbg-lighter: rgb(250, 248, 241);
@@ -23,7 +20,7 @@
 
 body {
     font-size: 16px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     padding-top: 4rem;
 }
 
@@ -81,17 +78,6 @@ body {
 }
 
 
-.bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* Preserve aspet ratio */
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-}
-
-
 .navbar {
     display: flex;
     align-items: center;
@@ -139,7 +125,6 @@ body {
 .navbar .menu-icon {
     cursor: pointer;
     display: none;
-    padding: 0;
     user-select: none;
     z-index: 4;
     padding: 1rem;
@@ -177,8 +162,7 @@ body {
     display: none;
 }
 
-
-@media (max-width: 48em) {
+@media (max-width: 1023px) {
     .navbar-list {
         flex-direction: column;
         align-items: center;
@@ -238,10 +222,6 @@ body {
 }
 
 
-.field-invalid {
-    border: 2px solid var(--caccent);
-}
-
 .page-title-header h1 {
     padding: 1.5rem;
     text-align: center;
@@ -250,11 +230,8 @@ body {
 }
 
 .jumbotron {
-    background: rgba(0, 0, 0, 0.3) url(images/james-harrison-vpOeXr5wmR4-unsplash.jpg);
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgba(0, 0, 0, 0.3) url(images/james-harrison-vpOeXr5wmR4-unsplash.jpg) no-repeat fixed center;
     background-size: cover;
     background-blend-mode: darken;
 
@@ -335,7 +312,6 @@ body {
     margin-right: 1rem;
 }
 
-
 .page-footer {
     padding: 6rem 1rem;
     display: flex;
@@ -354,7 +330,6 @@ body {
     justify-content: center;
 }
 
-
 .social-media-links {
     display: flex;
     justify-content: center;
@@ -371,7 +346,6 @@ body {
     color: var(--cbg-lighter);
 }
 
-
 .footer-navbar {
     margin-left: 2rem;
     display: flex;
@@ -385,6 +359,7 @@ body {
 .footer-navbar a {
     color: var(--cbg-lighter);
     text-decoration: none;
+    text-align: center;
 }
 
 .copyright-info {
@@ -416,6 +391,7 @@ body {
 
 .contact-form {
     display: block;
+    margin-top: 2rem;
 }
 
 
@@ -438,6 +414,11 @@ body {
     position: absolute;
 }
 
+.contact-form .form-label {
+    display: block;
+    text-align: center;
+}
+
 .contact-form .icon {
     min-width: 50px;
     text-align: center;
@@ -445,9 +426,12 @@ body {
 
 .contact-form input[type=text],
 .contact-form input[type=email] {
-    padding: 1rem;
     border-radius: 1rem;
-    padding-left: 3rem;
+    padding: 1rem 1rem 1rem 3rem;
+}
+
+.field-invalid {
+    border: 2px solid var(--cinvalid);
 }
 
 .contact-form textarea {
@@ -456,7 +440,7 @@ body {
     padding: 1rem;
     width: 100%;
     resize: none;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
 .form-submit-button {
@@ -469,15 +453,12 @@ body {
 }
 
 .form-submit-button:hover {
-    color: #fff;
     text-shadow: none;
-
     box-shadow: inset 200px 0 0 0 var(--cbg-alt);
     color: var(--cbg);
     background-color: var(--cbg-alt);
     cursor: pointer;
 }
-
 
 .contact-section {
     display: flex;
@@ -489,7 +470,6 @@ body {
     flex: 1;
     height: auto;
     background-image: url(images/contact.jpg);
-    /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -502,7 +482,6 @@ body {
     max-width: 100%;
     height: auto;
 }
-
 
 
 .tutorial-section-container {
@@ -525,7 +504,6 @@ body {
     width: 65%;
     box-shadow: var(--box-shadow);
 }
-
 
 
 .cards-container {
@@ -575,7 +553,6 @@ body {
 }
 
 .tutorial-download:hover {
-    color: #fff;
     text-shadow: none;
 
     box-shadow: inset 200px 0 0 0 var(--cbg-alt);
@@ -584,8 +561,6 @@ body {
     cursor: pointer;
 
 }
-
-/* Styles for small screens (up to 767px) */
 
 @media (max-width: 767px) {
     .popup-content {
@@ -652,12 +627,20 @@ body {
         margin: 1rem 3rem;
     }
 
-    .jumbotron {
+    .jumbotron,
+    .tutorial-section-container {
         background-attachment: inherit;
+    }
+
+    .footer-navbar {
+        flex-direction: column;
+    }
+
+    .footer-navbar li {
+        margin-bottom: 0.5rem;
     }
 }
 
-/* Styles for medium screens (768px to 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
     .main-article {
         min-width: 75%;
@@ -681,9 +664,4 @@ body {
         max-width: 75%;
         padding: 0.5rem;
     }
-}
-
-/* Styles for large screens (1024px and above) */
-@media (min-width: 1024px) {
-    /* Your CSS rules for large screens here */
 }
