@@ -290,10 +290,10 @@ body {
 }
 
 .secondary-article {
+    width: 100%;
     background-color: var(--cbg);
     margin: 2rem 0;
     padding: 3rem 2rem;
-    width: 100%;
 
     box-shadow: var(--box-shadow);
     border-radius: 1rem;
