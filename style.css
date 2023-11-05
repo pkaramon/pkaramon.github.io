@@ -250,12 +250,13 @@ body {
 }
 
 .jumbotron {
-    background: url(images/background.jpg);
+    background: rgba(0, 0, 0, 0.3) url(images/james-harrison-vpOeXr5wmR4-unsplash.jpg);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: darken;
 
     height: 100vh;
     display: flex;
@@ -298,10 +299,24 @@ body {
     padding: 2rem;
 }
 
+.articles-section a {
+    text-decoration: none;
+    color: #0074d9;
+}
+
+.articles-section ul>li>ul {
+    list-style: none;
+}
+
+.articles-section ul {
+    margin-top: 1rem;
+}
+
 .secondary-article {
     background-color: var(--cbg);
     margin: 2rem 0;
     padding: 3rem 2rem;
+    width: 100%;
 
     box-shadow: var(--box-shadow);
     border-radius: 1rem;
