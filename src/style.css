@@ -235,7 +235,7 @@ body {
 
 .jumbotron {
     /* Create the parallax scrolling effect */
-    background: rgba(0, 0, 0, 0.3) url(images/james-harrison-vpOeXr5wmR4-unsplash.jpg) no-repeat fixed center;
+    background: rgba(0, 0, 0, 0.3) url(../images/james-harrison-vpOeXr5wmR4-unsplash.jpg) no-repeat fixed center;
     background-size: cover;
     background-blend-mode: darken;
 
@@ -473,7 +473,7 @@ body {
 .contact-section .image-container {
     flex: 1;
     height: auto;
-    background-image: url(images/contact.jpg);
+    background-image: url(../images/contact.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -494,7 +494,7 @@ body {
     align-items: center;
     height: 100vh;
 
-    background-image: url(images/florian-klauer-mk7D-4UCfmg-unsplash.jpg);
+    background-image: url(../images/florian-klauer-mk7D-4UCfmg-unsplash.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
